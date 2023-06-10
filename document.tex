@@ -5,9 +5,19 @@
 \usepackage{enumitem} % enumerations
 \usepackage[a4paper, lmargin=54pt, rmargin=54pt, tmargin=54pt, bmargin=54pt]{geometry} % page layout
 \usepackage{tabularx} % tables
+\usepackage{hyperref}
 
 \title{Aussagekräftiger Titel}
 \author{Felix Zimmermann}
+
+\makeatletter
+\hypersetup{
+  pdftitle=\@title,
+  pdfauthor=\@author,
+  pdfdisplaydoctitle=true,
+  pdflang=de,
+}
+\makeatother
 
 \begin{document}
 
