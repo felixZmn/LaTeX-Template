@@ -1,11 +1,19 @@
 \documentclass[11pt,a4paper]{article}
 \usepackage[pdftex]{graphicx} % include images
-\usepackage[ngerman]{babel} % german-compitable output
+\usepackage[ngerman]{babel} % german-compatible output
 \usepackage{calc} % calculations
 \usepackage{enumitem} % enumerations
 \usepackage[a4paper, lmargin=54pt, rmargin=54pt, tmargin=54pt, bmargin=54pt]{geometry} % page layout
 \usepackage{tabularx} % tables
 \usepackage{hyperref}
+%\usepackage[
+%		backend=bibtex,
+%		bibwarn=true,
+%		bibencoding=utf8,
+%		sortlocale=de_DE,
+%		style=alphabetic-verb,
+%	]{biblatex}
+%\addbibresource{bibliographie.bib}
 
 \title{Aussagekräftiger Titel}
 \author{Felix Zimmermann}
@@ -16,6 +24,13 @@
   pdfauthor=\@author,
   pdfdisplaydoctitle=true,
   pdflang=de,
+  colorlinks=true,
+	linkcolor=blue,
+	citecolor=blue,
+	filecolor=blue,
+	menucolor=blue,
+	urlcolor=blue,
+  linktocpage=true,
 }
 \makeatother
 
@@ -25,5 +40,8 @@
 \thispagestyle{empty} % no page numbering; must be after \maketitle
 
 \section*{Erstes Kapitel}
+
+%\cleardoublepage
+%\printbibliography
 
 \end{document}
